@@ -10,11 +10,13 @@
     "react-app",
     "react-app/jest",
     "prettier",
-    "prettier/prettier"
+    "prettier/prettier",
+    "plugin:react-hooks/recommended"
   ],
   "plugins": [
     "react",
-    "prettier"
+    "prettier",
+    "react-hooks"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
@@ -37,6 +39,9 @@
     "no-shadow": "off",
     "import/extensions": "off",
     "import/no-extraneous-dependencies": "off",
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error"
+
   }
 }
