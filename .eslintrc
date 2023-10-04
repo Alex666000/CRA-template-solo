@@ -16,19 +16,18 @@
   "plugins": [
     "react",
     "prettier",
-    "react-hooks"
+    "react-hooks",
+    "unused-imports",
+    "ulbi-tv-plugin"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "rules": {
-    "prettier/prettier": "error",     // Обязательно!! Подсвечивает ошибки из Prettier.
-    "react/jsx-indent": [2, 4],
-    "react/jsx-indent-props": [2, 4],
-    "indent": [2, 4],
-    "react/jsx-filename-extension": [2, { "extensions": [
-      ".js", ".jsx", ".tsx"
-    ] }],
+    "no-plusplus": "error",
+    "no-alert": "error",
+    "prettier/prettier": "error", // Обязательно!! Подсвечивает ошибки из Prettier.
+    "unused-imports/no-unused-imports": "error",
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
     "no-unused-vars": "warn",
@@ -42,14 +41,44 @@
     "no-underscore-dangle": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
-    "max-len": ["error", { "code": 120, "ignoreComments": true }]
+    "react/jsx-indent": [
+      2,
+      4
+    ],
+    "react/jsx-indent-props": [
+      2,
+      4
+    ],
+    "indent": [
+      2,
+      4
+    ],
+    "react/jsx-filename-extension": [
+      2,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignoreComments": true
+      }
+    ]
   },
   "overrides": [
     {
-      "files": ["**/src/**/*.{test,stories}.{ts,tsx}"],
+      "files": [
+        "**/src/**/*.{test,stories}.{ts,tsx}"
+      ],
       "rules": {
-        "max-len": "off",
-      },
-    },
+        "max-len": "off"
+      }
+    }
   ]
 }
