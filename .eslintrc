@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "react-app",
+    "react-app/jest",
+    "prettier",
+    "prettier/prettier"
+  ],
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": "error", // Обязательно!! Подсвечивает ошибки из Prettier.
+  }
+}
