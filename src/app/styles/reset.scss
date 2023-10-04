@@ -7,7 +7,8 @@ html{
 *::before{
     box-sizing: inherit;
 }
-/*у тех у кого есть атрибут класс*/
+
+/* у тех у кого есть атрибут класс */
 ul[class],
 ol[class] {
     padding: 0;
@@ -39,6 +40,7 @@ dd {
 ul[class] {
     list-style: none;
 }
+
 /* чтобы у картинки скролла не было */
 img {
     max-width: 100%;
