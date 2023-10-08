@@ -15,26 +15,3 @@ npm i -D eslint-config-prettier
 Как они в связке работают: https://ru.hexlet.io/blog/posts/rukovodstvo-eslint-prettier
 ##
 Все типы @types должны лежать в devDependencies
-
-##
-
-
-##
-
-
-##
-
-
-##
-
-
-##
-
-
-##
-
-
-##
-
-
-##
