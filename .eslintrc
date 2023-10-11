@@ -25,9 +25,14 @@
   },
   "rules": {
     "no-plusplus": "error",
+    "import/no-duplicates": "warn",
+    "import/first": "warn",
     "no-alert": "error",
-    "prettier/prettier": "error", // Обязательно!! Подсвечивает ошибки из Prettier.
+    "object-curly-spacing": ["error", "always"],
     "unused-imports/no-unused-imports": "error",
+    "react/no-unused-prop-types": "off",
+    "react/destructuring-assignment": "warn",
+    "react/prefer-stateless-function": "off",
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
     "no-unused-vars": "warn",
@@ -40,6 +45,7 @@
     "import/no-extraneous-dependencies": "off",
     "no-underscore-dangle": "off",
     "react-hooks/rules-of-hooks": "error",
+    "max-classes-per-file": "warn",
     "@typescript-eslint/no-unused-vars": ["error"],
     "react-hooks/exhaustive-deps": "error",
     "react/jsx-indent": [
@@ -67,7 +73,7 @@
     "max-len": [
       "error",
       {
-        "code": 120,
+        "code": 150,
         "ignoreComments": true
       }
     ]
